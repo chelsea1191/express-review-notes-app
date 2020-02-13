@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "id": "8cbc12a0-6e21-4b87-8533-39223f9972dd",
+    "text": "whats up",
+    "archived": true
+  },
+  {
+    "id": "a7cfc5bd-815c-4af2-93b2-171e41f46f57",
+    "text": "my name is chelsea",
+    "archived": true
+  },
+  {
+    "id": "8a1e79f9-85fd-445e-b1d8-cd20934e66e7",
+    "text": "my dogs name is zeus",
+    "archived": true
+  },
+  {
+    "id": "24abb5be-0a2d-458f-889f-6949dad2bcff",
+    "text": "note 5",
+    "archived": false
+  },
+  {
+    "id": "4ed12f67-7fd2-4853-9ab7-a5927fd2d57f",
+    "text": "note 6",
+    "archived": false
+  }
+]
