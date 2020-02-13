@@ -45,8 +45,8 @@ app.put("/api/notes/:id", (req, res, next) => {
       });
       return notes;
     })
-    .then(updatedNotes => {
-      db.writeJSON(pathToNotes, updatedNotes);
+    .then(finalNotes => {
+      db.writeJSON(pathToNotes, finalNotes);
     })
     .then(notes => res.send(notes))
     .catch(next);
@@ -62,7 +62,8 @@ app.delete("/api/notes/:id", (req, res, next) => {
     .then(leftoverNotes => {
       return db.writeJSON(pathToNotes, leftoverNotes);
     })
-    .then(() => res.status(204).send());
+    .then(() => res.status(204).send())
+    .catch(next);
 });
 
 const port = process.env.PORT || 3000;
