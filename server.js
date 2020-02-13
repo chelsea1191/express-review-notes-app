@@ -34,16 +34,15 @@ app.post("/api/notes", (req, res, next) => {
 });
 
 app.put("/api/notes/:id", (req, res, next) => {
-  const updated = req.body.archived;
+  const bool = req.body.archived;
   const id = req.params.id;
   db.readJSON(pathToNotes)
     .then(notes => {
       notes.forEach(note => {
         if (note.id == id) {
-          note.archived = updated;
+          note.archived = bool;
         }
       });
-
       return notes;
     })
     .then(updatedNotes => {
