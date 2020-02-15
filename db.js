@@ -28,7 +28,12 @@ const writeJSON = (file, data) => {
   });
 };
 
+const destroy = file => {
+  console.log("made it to backend db destroy");
+};
+
 module.exports = {
   readJSON,
-  writeJSON
+  writeJSON,
+  destroy
 };

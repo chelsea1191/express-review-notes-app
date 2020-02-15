@@ -2,7 +2,7 @@
   {
     "id": "a7cfc5bd-815c-4af2-93b2-171e41f46f57",
     "text": "my name is chelsea",
-    "archived": false
+    "archived": true
   },
   {
     "id": "8a1e79f9-85fd-445e-b1d8-cd20934e66e7",
@@ -12,21 +12,26 @@
   {
     "id": "24abb5be-0a2d-458f-889f-6949dad2bcff",
     "text": "note 5",
-    "archived": false
+    "archived": true
   },
   {
     "id": "4ed12f67-7fd2-4853-9ab7-a5927fd2d57f",
     "text": "note 6",
-    "archived": false
+    "archived": true
   },
   {
     "id": "4cae06be-b444-42d8-ae6d-077b909fa5ca",
     "text": "testing 345",
-    "archived": true
+    "archived": false
   },
   {
     "id": "a57feaf0-f2db-4814-a56f-8228cc094972",
     "text": "testing 999999",
-    "archived": true
+    "archived": false
+  },
+  {
+    "id": "c2f4033c-debc-4145-852c-d8b3cd043b0d",
+    "text": "gggg",
+    "archived": false
   }
 ]

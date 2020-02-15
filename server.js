@@ -39,7 +39,7 @@ app.put("/api/notes/:id", (req, res, next) => {
   db.readJSON(pathToNotes)
     .then(notes => {
       notes.forEach(note => {
-        if (note.id == id) {
+        if (note.id === id) {
           note.archived = bool;
         }
       });
@@ -56,7 +56,7 @@ app.delete("/api/notes/:id", (req, res, next) => {
   const id = req.params.id;
   db.readJSON(pathToNotes)
     .then(notes => {
-      const remainingNotes = notes.filter(note => note.id != id);
+      const remainingNotes = notes.filter(note => note.id !== id);
       return remainingNotes;
     })
     .then(leftoverNotes => {
